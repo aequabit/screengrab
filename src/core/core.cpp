@@ -485,8 +485,8 @@ void Core::sendNotify(const StateNotifyMessage &message)
 void Core::copyScreen()
 {
     QApplication::clipboard()->setPixmap(*_pixelMap, QClipboard::Clipboard);
-    StateNotifyMessage message(tr("Copied"), tr("Screenshot is copied to clipboard"));
-    sendNotify(message);
+    //StateNotifyMessage message(tr("Copied"), tr("Screenshot is copied to clipboard"));
+    //sendNotify(message);
 }
 
 void Core::openInExtViewer()
